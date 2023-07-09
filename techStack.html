@@ -9,20 +9,32 @@
             border:2px solid rgb(10, 10, 10);
             border-collapse: collapse;
         }
+        #techStack{
+            background-color: blanchedalmond; color:rgb(23,9,36);
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        text-shadow: 4px 2px 4px rgb(231,107,62);
+      }
+    .techHeading tr th{
+        padding: 3px;
+    }
+    .language tr td {
+        padding: 2px;
+    }
     </style>
 </head>
 <body>
-        <h2> Technology Stack</h2>
+        <h2 id="techStack"> Technology Stack</h2>
         <table>
-            <thead>
+            <thead class="techHeading">
                 <tr>
                     <th> Sr.No </th>
                     <th> Technology Stack</th>
                     <th> Rating</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody class="language">
+            <tr>
                 <td> 1 </td>
                 <td> HTML</td>
                 <td> 4 </td>

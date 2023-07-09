@@ -9,27 +9,49 @@
             border:2px solid rgb(36, 155, 160);
             border-collapse: collapse;
         }
+        .personal{
+        background-color: blanchedalmond; color:rgb(23,9,36);
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        text-shadow: 4px 2px 4px rgb(231,107,62);
+      }
+    #name{
+    color: rgb(8, 8, 8);
+    margin-left: 1px;
+     } 
+     .contact{
+    margin-right: 20px;
+      } 
+      .programming li{
+    padding: 2px;
+     }
+     .head tr th{
+        padding: 1px;
+     } .data tr td{
+       padding: 1px;
+     }
+        
     </style>
 </head>
 <body>
-    <h2>My Personal Details</h2>
+    <h3 class="personal">My Personal Details</h3>
     <img src="assets/personal photo.jpg " alt="profile photo">
-    <p><strong>Name:</strong>&nbsp; Mohit Sharma</p>
-    <h3>Contact Details</h3>
-    <p>&nbsp;&nbsp;&nbsp;<strong>Mobile:</strong>&nbsp;12345&nbsp;690&nbsp;90</p>
-    <p>&nbsp;&nbsp;&nbsp;<strong>Email:</strong>&nbsp;mohit_sharma@gmail.com</p>
+    <p id="name"><strong>Name:</strong>Mohit Sharma</p>
+    <h3 class="personal">Contact Details</h3>
+    <p class="contact"><strong>Mobile:</strong>12345 690 90</p>
+    <p><strong>Email:</strong>mohit_sharma@gmail.com</p>
     <hr>
-    <h3>My Technology Stack</h3>
-    <ul>
+    <h3 class="personal">My Technology Stack</h3>
+    <ul class="programming">
         <li>HTML5</li>
         <li>CSS</li>
         <li>JavaScript</li>
         <li>Angular</li>
     </ul>
     <hr>
-    <h3>Academic Details</h3>
+    <h3 class="personal">Academic Details</h3>
     <table>
-        <thead>
+        <thead class="head">
             <tr>
                 <th>Sr.No</th>
                 <th>Academic</th>
@@ -37,7 +59,7 @@
                 <th>University / Board</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="data">
             <tr>
                 <td>1</td>
                 <td>Graduation </td>

@@ -9,12 +9,24 @@
             border:2px solid rgb(10, 10, 10);
             border-collapse: collapse;
         }
+        #education{
+        background-color: blanchedalmond; color:rgb(23,9,36);
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        text-shadow: 4px 2px 4px rgb(231,107,62);
+      }
+      .heading{
+        padding: 2px;
+      }
+      .details tr td{
+        padding: 1px;
+      }
     </style>
 </head>
 <body>
-    <h3> My Educational Details</h3>
+    <h3 id="education"> My Educational Details</h3>
     <table>
-        <thead>
+        <thead class="heading">
             <tr>
                 <th> Qualification </th>
                 <th> School/College </th>
@@ -22,7 +34,7 @@
                 <th> Year </th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="details">
             <tr>
                 <td>Post Graduation</td>
                 <td>CKT College,Panvel</td>
