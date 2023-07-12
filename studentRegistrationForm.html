@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Signika+Negative&display=swap" rel="stylesheet">
+<style>
+#registration{
+    font-family: 'Poppins', sans-serif;
+}
+.form tr td{
+    font-family: 'Signika Negative', sans-serif;
+}
+input[type="text"]{
+    width:200px;
+    border-radius: 5px;
+    padding: 5px;
+    color:brown;
+    font-weight: normal;
+    font-size: smaller;
+    text-transform: uppercase;
+}
+input[type="week"]{
+    width:200px;
+    border-radius: 5px;
+    padding: 5px;
+    color:brown;
+    font-weight: normal;
+    font-size: smaller;
+    text-transform: capitalize;
+}
+.set{
+    background-color: rgb(211, 205, 218);
+}
+input[type="email"]{
+    width:200px;
+    border-radius: 5px;
+    padding: 3px;
+    color:brown;
+    font-weight: normal;
+    font-size: smaller;
+    text-transform: capitalize; 
+}
+input[type="password"]{
+    width:200px;
+    border-radius: 5px;
+    padding: 3px;
+    color:brown;
+    font-weight: normal;
+    font-size: large;
+    text-transform: capitalize;
+}
+input[type="tel"]{
+    width:200px;
+    border-radius: 5px;
+    padding: 3px;
+    color:brown;
+    font-weight: bolder;
+    font-size: large;
+    text-transform: capitalize;
+}
+input[type="number"]{
+    width:200px;
+    border-radius: 5px;
+    padding: 5px;
+    color:brown;
+    font-weight: normal;
+    font-size: smaller;
+    text-transform: capitalize;
+}
+input[type="date"]
+{
+    width:120px;
+    border-radius: 5px;
+    padding: 3px;
+    color:brown;
+    font-weight: bolder;
+    font-size: smaller;
+    text-transform: uppercase;
+}
+input[type="week"]{
+    width:200px;
+    border-radius: 5px;
+    padding: 3px;
+    color:brown;
+    font-weight: bolder;
+    font-size: smaller;
+    text-transform: capitalize;
+}
+input[type="time"]{
+    width:200px;
+    border-radius: 5px;
+    padding: 3px;
+    color:brown;
+    font-weight: normal;
+    font-size: large;
+    text-transform: capitalize;
+} 
+button[type="submit"]{
+    width:100px;
+    border-radius: 5px;
+    padding: 2px;
+    color:brown;
+    font-weight: bolder;
+    font-size:small;
+    text-transform: capitalize;
+    background-color: rgb(241, 206, 163);
+}
+button[type="reset"]{
+    width:100px;
+    border-radius: 5px;
+    padding: 2px;
+    color:brown;
+    font-weight: bolder;
+    font-size: small;
+    text-transform: capitalize;
+    background-color: rgb(241, 206, 163);
+}
+
+</style>
+</head>
+<body>
+    <fieldset class="set">
+        <legend> <h2 id="registration">Student Registration Form </h2></legend> 
+    <table>
+        
+        <form>
+        <tbody class="form">
+            <tr>
+                <td><label>First Name</label></td>
+                <td><input type="text" required placeholder="only capitals"></td>
+            </tr>
+            <tr>
+                <td><label>Last Name</label></td>
+                <td><input type="text" placeholder="only capitals"></td>
+            </tr>
+            <tr>
+               <td><label>Age</label></td> 
+               <td><input type="number" required placeholder="only age>=18 allow"></td>
+            </tr>
+            <tr>
+                <td><label>Name of your country</label></td>
+                <td><input type="text" value="india" readonly></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label> Password</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label>Mobile No</label></td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Select Available for discussion</td>
+                <td><input type="week"></td>
+            </tr>
+            <tr>
+                <td>Suitable Time</td>
+                <td><input type="time"></td>
+            </tr>
+            <tr>
+                <td><label>Select Gender</label></td>
+                <td>
+                    <input type="radio" name="gender"><label> Male</label>
+                    <input type="radio" name="gender"><label> Female</label>
+                    <input type="radio" name="gender"><label> Other</label>
+                </td>
+            </tr>
+            <td>Technology Stack</td>
+            <td>
+                <input type="checkbox"><label>C</label>
+                <input type="checkbox"><label>CPP</label>
+                <input type="checkbox"><label>Java</label>
+                <input type="checkbox"><label>Angular</label>
+                <input type="checkbox"><label>React</label>
+                <input type="checkbox"><label>DevOps</label>
+                <input type="checkbox"><label>CI/CD Tools</label>
+            </td>
+            <tr>
+                <td><lable>Upload Photo</lable></td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td><label>Upload Document</label></td>
+                <td><input type="file" multiple></td>
+            </tr>
+            <tr>
+                <td><label>Select your State</label></td>
+                <td>
+                    <select>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Karnatka">Karnatka</option>
+                    <option value="Ap">Andra pradesh</option>
+                    <option value="UP">UP</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Bihar">Bihar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td> <button type="submit">Register</button> </td>
+                <td> <button type="reset">Reset</button> </td>
+            </tr>
+        </tbody>
+        </form>
+    </table>
+</fieldset>
+</body>
+</html>
