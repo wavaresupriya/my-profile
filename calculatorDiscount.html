@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Discount Calculator </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Signika+Negative&display=swap" rel="stylesheet">
+    <style>
+      #discount{
+        font-family: 'Poppins', sans-serif;
+        color: cadetblue;
+        margin-left: 40px;
+        
+      }
+      input[type="number"]{
+        width:350px;
+        padding: 2px;
+        font-weight:small;
+        font-size:smaller;
+        color:cadetblue;
+        margin-bottom: 7px;
+        font-family: 'Signika Negative', sans-serif;
+      }
+      button[type="Calculate"]{
+        width:350px; 
+        border-radius: 6px;
+        padding: 4px;
+        font-weight:small;
+        font-size:large;
+        margin-bottom: 5px;
+        color: rgb(249, 250, 252);
+        background-color:burlywood;
+        border-color:burlywood;
+        font-family: 'Signika Negative', sans-serif;
+      }
+      span,label,p{
+        margin-bottom: 5px;
+        font-family: 'Signika Negative', sans-serif;
+        color:cadetblue;
+      }
+    </style>
+    
+</head>
+<body>
+    <form>
+    <h2 id="discount"> DISCOUNT CALCULATOR</h2>
+    <p>Enter the Bill amount and discount in percentage</p>
+    <label>Bill Amount</label><br>
+    <input type="number"><br>
+    <label>Discount in percentage</label><br>
+    <input type="number"><br>
+    <button type="Calculate">Calculate</button>
+    <br>
+    <span>Total Discount Amount</span>
+
+  </form>
+    
+</body>
+</html>
