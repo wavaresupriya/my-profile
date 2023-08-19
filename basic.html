@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard</title>
+    <style>
+ul li{
+    list-style-type: none;
+}
+.cross::before{
+    content:"❌";
+}
+#head{
+    background-color:#45aa48;
+    text-transform: capitalize;
+    font-size: medium;
+    text-align: center;
+    padding-top: 7px;
+    color: rgb(247, 249, 250);
+    border: #45aa48;
+    height: 30px;
+    
+}
+#bye{
+    background-color: #45aa48;
+    border-color: #45aa48;
+    border-radius: 6px;
+    width: 160px;
+    height: 25px;
+    text-align: center;
+    margin-left: 10px;
+}
+.check::before{
+    content:"✔️";
+}
+#doller{
+    font-size: large;
+    font-weight: 10px;
+    text-align: center;
+    font-style: normal;
+    text-align: center;
+    color: rgb(10, 10, 10);
+}
+    </style>
+</head>
+<body>
+    <h2 id="head">Basic</h2>
+    <ul>
+        <li class="check">Hosting</li>
+        <li class="cross">Domain</li>
+        <li class="check">1 GB Space</li>
+        <li class="cross">Free SSL</li>
+        <li class="check">1 Website Host</li>
+    </ul>
+    <h2 id="doller">$5</h2>
+    <button id="bye">Buy Now</button>
+    
+</body>
+</html>
